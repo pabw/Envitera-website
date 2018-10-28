@@ -1,0 +1,290 @@
+@font-face{
+    font-family: 'Viga';
+    src:url('/static/font/Viga.otf');
+}
+
+body{
+    background-color: white;
+}
+
+/* navbar */
+.navbar{
+    z-index: 1;
+    position: relative;
+}
+.navbar-brand{
+    font-family: Viga;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0d7d2b !important;
+}
+
+/* endnavbar */
+
+/* hero */
+.hero{
+    background-image: url('/static/img/hero.jpg');
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.1));
+}
+.hero .container{
+    position: relative;
+    z-index: 1;
+}
+.hero .display-4{
+    font-family: Viga;
+    font-weight: 200;
+    color:whitesmoke;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.hero .display-4 span{
+    font-family: Viga;
+    font-weight: bold;
+}
+/* endhero */
+
+/* services */
+.service{
+    margin-top:-180px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    padding: 27px;
+    border-radius: 20px;
+    background-color:whitesmoke;
+}
+
+
+.service h4{
+    font-family: Viga;
+    font-size: 18px;
+}
+
+.service p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: -8px;
+}
+
+.service img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+/* endservices */
+
+/* content  */
+
+.content {
+    position: relative;
+    margin: 80px auto;
+}
+.content img{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+.content h4{
+    font-size: 32px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.content p{
+    font-size: 15px;
+    font-weight: normal;
+    margin:10px 0 25px;
+}
+
+.content .desc{
+    text-align: center;
+}
+
+.content .arrow{
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+}
+
+.content .prev{
+    background-image: url(../img/prev.png);
+    margin-right:-40px;
+}
+
+.content .next{
+    background-image: url(../img/next.png);
+    margin-left:-40px;
+}
+
+/* endcontent */
+
+/* report */
+
+.report{
+    background-color: ghostwhite;
+    padding: 30px 0;
+}
+.report .head{
+    font-family: Viga;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.report .head::after{
+    content: '';
+    display: block;
+    margin-top:8px;
+    border-bottom: 1px solid #45A86C;
+}
+.report .card{
+    box-shadow: 0 4px 5px rgba(163, 120, 120, 0.4);
+    margin-bottom: 10px;
+    text-align: center;
+}
+                
+.report .card-title{
+    font-family: Viga;
+    font-size: 16px;
+}
+
+.report .card-text{
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.report .card a{
+    font-size: 12px;
+    color:#0d7d2b;
+}
+
+.report .card a:hover{
+    border: 1px solid #0d7d2b;
+}
+
+
+/* endreport */
+
+/* regiter */
+.register{
+    font-family: Viga;
+    font-weight: 600;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+
+.register a{
+    color :#0d7d2b !important;
+}
+
+.register .round-btn:hover{
+    background-color: #0d7d2b;
+    color: ghostwhite !important;
+}
+
+/* endregister */
+
+/* footer */
+footer{
+    color:white;
+    background-color:#505F62;
+    position: relative;
+    padding: 30px;
+    margin:0;
+}
+/* endfooter */
+
+/* utilitas */
+.round-btn{
+    border-radius: 40px;
+    padding: 7px 20px;
+    font-weight: 600;
+}
+/* endutilitas */
+
+/* Responsive */
+@media (min-width:992px){
+
+    /* navbar */
+    .navbar-brand{
+        text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+    }
+    .nav-link{
+        color:white !important;
+        font-weight: 550;
+        margin-right: 24px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+
+
+    .nav-link:hover::after{
+        content: " ";
+        display: block;
+        border-bottom: 3px solid #0d7d2b;
+        width: 70%;
+        margin:auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    /* endnav */
+
+    /* hero */
+    .hero{
+        position: relative;
+        margin-top:-75px;
+    }
+    .hero .display-4{
+        font-size: 52px;
+    }
+    /* endhero */
+
+    /* services */
+    .service{
+        margin-top: -110px;
+    }
+
+    .service h4{
+        font-size: 20px;
+    }
+
+    .service p{
+        font-size: 15px;
+    }
+
+    .service img{
+        width: 64px;
+        margin-bottom: 0;
+    }
+    /* endservices */
+
+    /* content */
+    .content .desc{
+        text-align: left;
+    }
+    .content .arrow{
+        margin-top:0px;
+    }
+    .content .prev{
+        margin-right: 40px;
+    }
+
+    .content .next{
+        margin-left:40px;
+    }
+    /* endcontent */
+
+}
+/* endresponsive */
