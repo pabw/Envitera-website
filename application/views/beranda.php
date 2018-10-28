@@ -1,38 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/style-envitera.css">
-    <title>Envitera</title>
-    <link rel="shortcut icon" href="static/img/favicon.jpg" >
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container">
-        <a class="navbar-brand" href="#">Envitera</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Beranda <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Blog</a>
-            <a class="nav-item nav-link" href="#">Lapor</a>
-            <a class="nav-item btn btn-success round-btn" href="#">Daftar</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- endnavbar -->
-
-    <!-- hero -->
+   <!-- hero -->
     <div class="hero jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Less <span>pollution</span> <br>  is the best<span> solution</span>.</h1>
@@ -218,38 +184,3 @@
         <span>Bergabung bersama kami dengan <a class=" btn round-btn"> Daftar</a>Sekarang!</span>
     </div>
     <!-- endregister -->
-
-    <!-- footer -->
-    <footer class="container-fluid shadow-lg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg">
-            <h5>Footer 1</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis quo est, distinctio fugiat alias.</p>
-          </div>
-          <div class="col-lg ml-auto">
-            <h5>Footer 2</h5>
-            <ul>
-              <li>Footer Desc here</li>
-              <li>Footer Desc here</li>
-              <li>Footer Desc here</li>
-              <li>Footer Desc here</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <span>2018 &copy; Envitera.</span>
-        </div>
-      </div>
-    </footer>
-    <!-- endfooter -->
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="static/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="static/js/popper.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/script-envitera.js"></script>
-  </body>
-</html>
