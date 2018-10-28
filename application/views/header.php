@@ -25,7 +25,7 @@
             <a class="nav-item nav-link active" href="#">Beranda <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#">Blog</a>
             <a class="nav-item nav-link" href="#">Lapor</a>
-            <a class="nav-item btn btn-success round-btn" href="#">Daftar</a>
+            <a class="nav-item btn btn-success round-btn" href="login">Daftar</a>
           </div>
         </div>
       </div>
