@@ -1,106 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<section class="g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after g-py-100 g-pt-150" style="background-image: url(./assets/img-temp/1920x800/login.jpg);">
+    <div class="container g-pos-rel g-z-index-1">
+        <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-12">
+            <h1 class="g-color-white text-uppercase mb-4">REGISTRASI AKUN</h1>
+            <div class="d-inline-block g-width-35 g-height-2 g-bg-white mb-4"></div>
+        </div>
+        </div>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->  
-    <link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
-<!--===============================================================================================-->  
-    <link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
-<!--===============================================================================================-->  
-    <link rel="stylesheet" type="text/css" href="static/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/css/util.css">
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-    
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100 p-t-85 p-b-20">
-                <form class="login100-form validate-form">
-                    <span class="login100-form-title p-b-70">
-                        Welcome
-                    </span>
-                    <span class="login100-form-avatar">
-                        <img src="static/img/ava.jpg" alt="AVATAR">
-                    </span>
+        <div class="row justify-content-center align-items-center no-gutters">
+        <div class="col-lg-5">
+            <div class="g-bg-teal g-rounded-5--lg-up g-pa-50">
 
-                    <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
-                        <input class="input100" type="text" name="username">
-                        <span class="focus-input100" data-placeholder="Username"></span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
-                        <input class="input100" type="password" name="pass">
-                        <span class="focus-input100" data-placeholder="Password"></span>
-                    </div>
-
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            Login
+            <h2 class="h3 g-color-white mb-4">Login</h2>
+            <?php if(isset($_GET['info']) and $_GET['info'] != "") { ?>
+                <div class="info_daftar">
+                    <div class="alert alert-dismissible fade show g-bg-yellow rounded-0" role="alert">
+                        <button type="button" class="close u-alert-close--light" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
                         </button>
+                        <div class="media">
+                        <span class="d-flex g-mr-10 g-mt-5">
+                            <i class="icon-info g-font-size-25"></i>
+                        </span>
+                        <span class="media-body align-self-center">
+                            <strong>Info!</strong> 
+                            <p><?php echo str_replace("-", " ", $_GET['info']); ?></p>
+                        </span>
+                        </div>
                     </div>
+                </div>
+            <?php }?>
 
-                    <ul class="login-more p-t-190">
-                        <li class="m-b-8">
-                            <span class="txt1">
-                                Forgot
-                            </span>
-
-                            <a href="#" class="txt2">
-                                Username / Password?
-                            </a>
-                        </li>
-
-                        <li>
-                            <span class="txt1">
-                                Don’t have an account?
-                            </span>
-
-                            <a href="#" class="txt2">
-                                Sign up
-                            </a>
-                        </li>
-                    </ul>
-                </form>
+            <form class="g-py-15" name="kirimPesan" role="form" data-toggle="validator" class="form-horizontal" action="<?php echo base_url()?>login/auth" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-12 form-group g-mb-20">
+                    <input class="form-control form-control-md rounded" placeholder="Email" name="email" value="" required>
+                    </div>
+                    <div class="col-md-12 form-group g-mb-20">
+                    <input class="form-control form-control-md rounded" type="password" placeholder="Password" name="password" value="" required>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-md btn-block u-btn-indigo rounded text-uppercase g-py-13" type="submit" role="button">Login <i class="fa fa-sign-in"></i></button>
+                </div>
+            </form>
             </div>
         </div>
+
+            <form class="g-py-15" name="kirimPesan" role="form" data-toggle="validator" class="form-horizontal" action="<?php echo base_url()?>registrasi/user" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-12 form-group g-mb-20">
+                    <input class="form-control form-control-md rounded" name="namalengkap" type="tel" placeholder="Nama Depan" required>
+                    </div>
+                    <div class="col-md-12 form-group g-mb-20">
+                    <input class="form-control form-control-md rounded" name="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-12 form-group g-mb-20">
+                    <input class="form-control form-control-md rounded" name="password" type="password" placeholder="Password" required>
+                    </div>
+                    <div class="col-md-12 form-group g-mb-20">
+                    <label class="form-check-inline u-check g-color-gray-dark-v5 g-font-size-12 g-pl-25 mb-2">
+                      <input class="hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                      <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                        <i class="fa" data-check-icon=""></i>
+                      </div>
+                      I accept the <a href="#">Terms and Conditions</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-md btn-block u-btn-primary rounded text-uppercase g-py-13" type="submit" role="button">Register <i class="fa fa-send"></i></button>
+                </div>
+            </form>
+
+            </div>
+        </div>
+        </div>
     </div>
-    
-
-    <div id="dropDownSelect1"></div>
-    
-<!--===============================================================================================-->
-    <script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-    <script src="static/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-    <script src="static/vendor/bootstrap/js/popper.js"></script>
-    <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-    <script src="static/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-    <script src="static/vendor/daterangepicker/moment.min.js"></script>
-    <script src="static/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-    <script src="static/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-    <script src="static/js/main.js"></script>
-
-</body>
-</html>
+</section>
