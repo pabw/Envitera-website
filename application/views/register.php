@@ -22,18 +22,27 @@
                     <div class="card mt-5">
                         <div class="card-body">
                             <form>
-                                
+                                <div class="form-group">
+                                    <label for="name">Nama Anda</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
+                                </div>
                                 <div class="form-group">
                                     <label for="email">Email Anda</label>
                                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukkan email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                        else.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="password1">Password</label>
                                     <input type="password" class="form-control" id="password1" placeholder="Password">
                                 </div>
-                                
-                                <button type="Login" class="btn btn-success round-btn">Login</button>
-                                     <center><b>Not registered ?</b> <br></b><a href="register">register here</a></center>
+                                <div class="form-group">
+                                    <label for="password2">Ulangi Password</label>
+                                    <input type="password" class="form-control" id="password2" placeholder="Password">
+                                </div>
+            
+                                <button type="Daftar" class="btn btn-success round-btn">Register</button>
+                                     <center><b>Already registered ?</b> <br></b><a href="login">Login here</a></center>
                             </form>
                         </div>
                     </div>

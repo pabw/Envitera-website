@@ -40,6 +40,7 @@
     <!--content  -->
     <div class="container content ">
       <div id="contentslider" class="carousel slide" data-ride="carousel">
+        
         <div class="carousel-inner">
 
           <div class="carousel-item active">
