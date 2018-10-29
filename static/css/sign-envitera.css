@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Viga';
-    src:url('/static/font/Viga.otf');
+    src:url('../font/Viga.otf');
 }
 
 .navbar{
