@@ -1,0 +1,127 @@
+body{
+    background-color: ghostwhite;
+}
+/* hero */
+.hero{
+    height: 300px;
+    background-image: url('/static/img/hero2.jpg');
+}
+
+.hero .display-4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+/* endhero */
+
+/* post */
+.post-body{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post .desc{
+    margin-top: -10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.post-body .desc .card-title{
+    margin-bottom: auto;
+    font-weight: bold;
+}
+.post-body .desc .btn{
+    margin-right: 5%;
+    padding: 2px 30px;
+}
+
+.post-body .desc .card-text{
+    width: 95%;
+    overflow: hidden;
+    position: relative; 
+    line-height: 1.2em;
+    max-height: 4.6em; 
+    text-align: justify;  
+    /* place for '...' */
+    margin-right: -1em;
+    padding-right: 1em;
+}
+.post-body .desc .card-text::before{
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.post-body .desc .card-text::after{
+ /* points in the end */
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+/* end post */
+
+/* cuplikan */
+.cuplikan{
+    font-size: 14px;
+    
+}
+.cuplikan .card{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.cuplikan h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cuplikan .card-header{
+    font-weight: bold;
+    font-size: 18px;
+}
+.cuplikan span{
+    margin-top:-15px;
+    font-size: 13px;
+}
+
+.cuplikan a{
+    text-decoration: none;
+}
+.info{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.cuplikan .lanjut{
+    font-weight: bold;
+}
+/* endcuplikan */
+
+/* pagination */
+.pagination .page-link{
+    color:#0d7d2b !important;
+}
+/* end pagination */
+
+/* Responsive */
+@media (min-width:992px){
+
+    /* hero */
+    .hero .display-4{
+        font-size: 32px;
+    }
+    /* endhero */
+
+    /* post */
+    .post .desc{
+        text-align: left;
+    }
+
+    /* endpost */
+
+
+}
+/* endresponsive */

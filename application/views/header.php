@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link active" href="#">Beranda <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Blog</a>
+            <a class="nav-item nav-link" href="blog">Blog</a>
             <a class="nav-item nav-link" href="#">Lapor</a>
             <a class="nav-item btn btn-success round-btn" href="login">Daftar</a>
           </div>

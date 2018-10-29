@@ -23,7 +23,7 @@ body{
 
 /* hero */
 .hero{
-    background-image: url('/static/img/hero.jpg');
+    background-image: url('/static/img/hero2.jpg');
     background-size: cover;
     height: 540px;
     text-align: center;
@@ -53,7 +53,6 @@ body{
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
 .hero .display-4 span{
-    font-family: Viga;
     font-weight: bold;
 }
 /* endhero */
@@ -64,7 +63,7 @@ body{
     box-shadow: 0 3px 20px rgba(0,0,0,0.5);
     padding: 27px;
     border-radius: 20px;
-    background-color:whitesmoke;
+    background-color:ghostwhite;
 }
 
 
@@ -198,7 +197,7 @@ body{
 /* endregister */
 
 /* footer */
-footer{
+.footer{
     color:white;
     background-color:#505F62;
     position: relative;

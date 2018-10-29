@@ -1,0 +1,116 @@
+@font-face{
+    font-family: 'Viga';
+    src:url('/static/font/Viga.otf');
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-brand, .navbar-toggler{
+    position: fixed;
+}
+
+.navbar-brand{
+    font-family: Viga;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0d7d2b !important;
+}
+
+.jumbotron{
+    background-image: url(../img/hero2.jpg);
+    background-size: cover;
+    min-height: 640px;
+    height: auto;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+
+.jumbotron::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.1));
+}
+
+.sign{
+    position: relative;
+}
+
+.sign .card{
+    z-index: 1;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sign .display-4{
+    font-family: Viga;
+    text-align: center;
+    z-index: 1;
+    font-weight: 200;
+    color:whitesmoke;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.sign span{
+    font-weight: bold;
+    color: white;
+}
+
+/* utilitas */
+.round-btn{
+    border-radius: 40px;
+    padding: 7px 20px;
+    font-weight: 600;
+}
+/* endutilitas */
+
+/* Responsive */
+@media (min-width:992px){
+    .navbar{
+        position: fixed;
+    }
+
+    .navbar-brand{
+        text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+    }
+    .nav-link{
+        color:white !important;
+        font-weight: 550;
+        margin-right: 24px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    .sign{
+        top:80px;
+    }
+
+
+    .nav-link:hover::after{
+        content: " ";
+        display: block;
+        border-bottom: 3px solid #0d7d2b;
+        width: 70%;
+        margin:auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    /* endnav */
+
+    .sign .display-4{
+        font-size: 56px;
+        text-align: left;
+    }
+
+
+}
+/* endresponsive */
