@@ -18,10 +18,20 @@ class login extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct(){
+ 
+        parent::__construct();
+  		$this->load->helpers('url');
+  		$this->load->model('users_model');
+        $this->load->library('session');
+ 
+}
 	public function index()
 	{
 		$this->load->view('header');
 		$this->load->view('login');
 		// $this->load->view('footer');
 	}
+	
+	
 }

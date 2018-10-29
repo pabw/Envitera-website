@@ -21,7 +21,7 @@
                 <div class="col-lg-5">
                     <div class="card mt-5">
                         <div class="card-body">
-                            <form>
+                            <form action="register/registration" method="post">
                                 <div class="form-group">
                                     <label for="name">Nama Anda</label>
                                     <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
@@ -41,7 +41,7 @@
                                     <input type="password" class="form-control" id="password2" placeholder="Password">
                                 </div>
             
-                                <button type="Daftar" class="btn btn-success round-btn">Register</button>
+                                <button type="submit" class="btn btn-success">Register</button> 
                                      <center><b>Already registered ?</b> <br></b><a href="login">Login here</a></center>
                             </form>
                         </div>
